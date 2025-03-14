@@ -17,14 +17,15 @@ const arr_airports = airports;
 
 for(let i = 0 ; i <= flights.length ; i++){
     const element = flights[i];
-    const flight_date = element.flight_date
+    console.log(element)
+    const flight_date1 = element.flight_date
     const flight_status = element.flight_status;
     const airports = element.departure.airport
     
 
     div_flights.innerHTML +=`
     <div class = "flights">
-    <p> Data zborului : <span class="style">${flight_date}</span> | aeroport : <span class="style">${airports}</span> | status : <span class="style">${flight_status}</span></p>
+    <p> Data zborului : <span class="style">${flight_date1}</span> | aeroport : <span class="style">${airports}</span> | status : <span class="style">${flight_status}</span></p>
     </div>
     `
 }
